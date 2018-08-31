@@ -1,18 +1,12 @@
-main:	main.o Ingredientes.o Bodega.o Clientes.o Platos.o
-		g++ main.o Ingredientes.o Bodega.o Clientes.o Platos.o -o main
+main:	main.o Persona.o Estudiante.o 
+		g++ main.o Persona.o Estudiante.o -o main
 		rm *.o
 
-main.o: main.cpp Clientes.h Platos.h Ingredientes.h Bodega.h
+main.o: main.cpp Persona.h Estudiante.h
 		g++ -c main.cpp
 
-Clientes.o:	Clientes.h
-		g++ -c Clientes.cpp
+Persona.o:	Persona.h
+		g++ -c Persona.cpp
 
-Ingredientes.o: Ingredientes.h
-		g++ -c Ingredientes.cpp
-
-Bodega.o: Ingredientes.h Bodega.h Platos.h
-		g++ -c Bodega.cpp
-
-Platos.o: Ingredientes.h Platos.h
-		g++ -c Platos.cpp
+Estudiante.o:	Estudiante.h Persona.h
+		g++ -c Estudiante.cpp

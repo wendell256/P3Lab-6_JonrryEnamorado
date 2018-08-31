@@ -1,5 +1,6 @@
 Cuenta: 11751062
 Nombre: Jonrry Wendell Enamorado Contreras
+Laboratorio Tipo 1
 Link: https://github.com/wendell256/P3Lab-6_JonrryEnamorado.git
 
 
