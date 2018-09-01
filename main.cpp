@@ -134,6 +134,7 @@ void CrearRecluta(){
     cin>>nacionalidad;
     cout<<endl<<"Carrera:"<<endl;
     cin>>carrera;
+    carreras.push_back(carrera);
     cout<<endl<<"Universidad"<<endl;
     cin>>universidad;
     cout<<endl<<"Cuenta:"<<endl;
@@ -154,7 +155,8 @@ void AggRecluta(){
         int num=1;
         cout<<carreras[i]<<":"<<endl;
         for(int j=0;j<reclutas.size();j++){
-            cout<<"   "<<num++<<") "<<reclutas[i]->getNombre()<<endl;
+            
+                cout<<"   "<<num++<<") "<<reclutas[i]->getNombre()<<endl;
         }
         cout<<endl;
     }
