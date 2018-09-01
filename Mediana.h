@@ -8,10 +8,7 @@ class Mediana:public Microempresa{
         string ingresos,egresos,departamento,RTN;
     public:
         Mediana(string,string,string,string,string,string,string,string,string);
-        void setIngresos(string);
-        void setEgresos(string);
-        void setDepartamento(string);
-        void setRTN(string);
+        
         string getIngresos();
         string getEgresos();
         string getDepartamento();
