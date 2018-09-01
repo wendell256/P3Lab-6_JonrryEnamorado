@@ -3,14 +3,15 @@
 
 #include "Estudiante.h"
 
-class Empleado:Estudiante{
+class Empleado:public Estudiante{
     private: 
             string empleadoID,salario;
     public:
+            Empleado(string,string,string,string,string,string,string,string,string,string,string);
             string getEmpleadoID();
-            void setEmpleadoID();
+            void setEmpleadoID(string);
             string getSalario();
-            void setSalario();
+            void setSalario(string);
 };
 
 #endif

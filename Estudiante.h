@@ -3,7 +3,7 @@
 
 #include "Persona.h"
 
-class Estudiante:Persona{
+class Estudiante:public Persona{
     protected:
             string carrera,universidad,cuenta,indice;
     public:
